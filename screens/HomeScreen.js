@@ -1,9 +1,11 @@
 import {View, Text, SafeAreaView, Image} from 'react-native';
 import React, {useLayoutEffect} from 'react';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import {useNavigation} from '@react-navigation/native';
-import {avatar} from '../assets';
 
+import {avatar} from '../assets';
+import {book} from '../assets';
 const HomeScreen = () => {
   const navigation = useNavigation();
   useLayoutEffect(() => {
@@ -22,11 +24,22 @@ const HomeScreen = () => {
             className="w-full h-full rounded-md object-cover"
           />
         </View>
-        <View className="w-16 h-16 rounded-md items-center justify-center">
+        <View className="w-16 h-16 rounded-md items-center justify-center cursor-pointer">
           <Image
-            source={avatar}
-            className="w-full h-full rounded-md object-cover"
+            source={book}
+            className="w-full h-full rounded-md object-cover "
           />
+        </View>
+      </View>
+
+      {/* Second Section */}
+      <View>
+        <View>
+          <Icon name="bonfire" size={30} color={'red'} />
+          <Icon name="bed-outline" size={30} color={'red'} />
+          <Icon name="restaurant" size={30} color={'red'} />
+          <Icon name="planet" size={30} color={'red'} />
+          <Icon name="fast-food" size={30} color={'red'} />
         </View>
       </View>
     </SafeAreaView>

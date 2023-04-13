@@ -34,12 +34,12 @@ const HomeScreen = () => {
 
       {/* Second Section */}
       <View>
-        <View>
-          <Icon name="bonfire" size={30} color={'red'} />
-          <Icon name="bed-outline" size={30} color={'red'} />
-          <Icon name="restaurant" size={30} color={'red'} />
-          <Icon name="planet" size={30} color={'red'} />
-          <Icon name="fast-food" size={30} color={'red'} />
+        <View className="flex-row justify-around px-6 mt-8 ">
+          <Icon name="bonfire" size={30} color={'blue'} />
+          <Icon name="bed-outline" size={30} color={'blue'} />
+          <Icon name="restaurant" size={30} color={'blue'} />
+          <Icon name="planet" size={30} color={'blue'} />
+          <Icon name="fast-food" size={30} color={'blue'} />
         </View>
       </View>
     </SafeAreaView>

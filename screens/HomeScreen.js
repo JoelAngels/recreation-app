@@ -52,9 +52,6 @@ const HomeScreen = () => {
       {/* Third Section */}
       <View className="px-6 mt-8 space-y-3">
         <Text className="text-[#35D877] text-[30px]">Adventure in our DNA</Text>
-        <Text className="text-[#000] text-[20px] font-bold">
-          Showing you the world, one country at a time
-        </Text>
 
         <Text className="text-[#3C6072] text-base">
           A collection of attractive and Unique Slogans companies. That can
@@ -62,8 +59,15 @@ const HomeScreen = () => {
         </Text>
       </View>
 
+      {/* Image Container */}
+
       <View className="flex-1 relative items-center justify-center">
         <Image source={green} className="w-full h-full object-cover mt-20" />
+        <View className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 border-[#00BCC9] rounded-full items-center justify-center">
+          <View>
+            <Text>Go</Text>
+          </View>
+        </View>
       </View>
     </SafeAreaView>
   );

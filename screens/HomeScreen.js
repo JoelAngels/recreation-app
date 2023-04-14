@@ -6,6 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import {avatar} from '../assets';
 import {book} from '../assets';
+import {green} from '../assets';
 const HomeScreen = () => {
   const navigation = useNavigation();
   useLayoutEffect(() => {
@@ -34,7 +35,7 @@ const HomeScreen = () => {
 
       {/* Second Section */}
       <View>
-        <View className="flex-row justify-around px-6 mt-10 ">
+        <View className="flex-row justify-around px-6 mt-5 ">
           <View>
             <Icon name="bonfire" size={30} color={'blue'} />
           </View>
@@ -46,6 +47,23 @@ const HomeScreen = () => {
           <Icon name="planet" size={30} color={'blue'} />
           <Icon name="fast-food" size={30} color={'blue'} />
         </View>
+      </View>
+
+      {/* Third Section */}
+      <View className="px-6 mt-8 space-y-3">
+        <Text className="text-[#35D877] text-[30px]">Adventure in our DNA</Text>
+        <Text className="text-[#000] text-[20px] font-bold">
+          Showing you the world, one country at a time
+        </Text>
+
+        <Text className="text-[#3C6072] text-base">
+          A collection of attractive and Unique Slogans companies. That can
+          attract and convey the right message to your potential customers.
+        </Text>
+      </View>
+
+      <View className="flex-1 relative items-center justify-center">
+        <Image source={green} className="w-full h-full object-cover mt-20" />
       </View>
     </SafeAreaView>
   );

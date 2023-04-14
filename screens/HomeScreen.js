@@ -71,15 +71,15 @@ const HomeScreen = () => {
           source={green}
           className="w-full h-full object-cover mt-20"
         />
-        <View className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 border-[#35D877] rounded-full items-center justify-center">
-          <TouchableOpacity>
-            <View className="w-20 h-20 items-center justify-center rounded-full bg-[#35D877]">
-              <Text className="text-gray-50 text-[25px] font-semibold">
-                Join
-              </Text>
-            </View>
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 border-[#35D877] rounded-full items-center justify-center">
+          <Animatable.View
+            animation={'pulse'}
+            easing="ease-in-out"
+            iterationCount={'infinite'}
+            className="w-20 h-20 items-center justify-center rounded-full bg-[#35D877]">
+            <Text className="text-gray-50 text-[25px] font-semibold">Join</Text>
+          </Animatable.View>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

@@ -7,6 +7,9 @@ import {useNavigation} from '@react-navigation/native';
 import {avatar} from '../assets';
 import {book} from '../assets';
 import {green} from '../assets';
+
+import * as Animatable from 'react-native-animatable';
+
 const HomeScreen = () => {
   const navigation = useNavigation();
   useLayoutEffect(() => {
@@ -62,7 +65,12 @@ const HomeScreen = () => {
       {/* Image Container */}
 
       <View className="flex-1 relative items-center justify-center">
-        <Image source={green} className="w-full h-full object-cover mt-20" />
+        <Animatable.Image
+          animation="fadeIn"
+          easing="ease-in-out"
+          source={green}
+          className="w-full h-full object-cover mt-20"
+        />
         <View className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 border-[#35D877] rounded-full items-center justify-center">
           <TouchableOpacity>
             <View className="w-20 h-20 items-center justify-center rounded-full bg-[#35D877]">

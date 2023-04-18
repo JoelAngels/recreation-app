@@ -12,11 +12,13 @@ import * as Animatable from 'react-native-animatable';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
+
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false,
     });
-  });
+  }, [navigation]);
+
   return (
     <SafeAreaView className="bg-white flex-1 relative">
       {/* {First Section} */}
